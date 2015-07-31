@@ -1,0 +1,17 @@
+{
+  "name": "streamshell",
+  "version": "0.0.1",
+  "description": "A desktop wrapper for NetFlix, Shomi, CraveTV, etc.",
+  "main": "main.js",
+  "keywords": [
+    "netflix",
+    "shomi",
+    "crave"
+  ],
+  "author": "Robin Bolton <robin@robinbolton.com> (http://robinbolton.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robinbolton/StreamShell/issues"
+  },
+  "homepage": "https://github.com/robinbolton/StreamShell#readme"
+}

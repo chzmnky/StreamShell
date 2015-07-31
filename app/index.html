@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StreamShell</title>
+    <link rel="stylesheet" href="main.css">
+    <script>
+      onload = function() {
+        var playa = document.getElementById("playa");
+        var loada = document.querySelector("#wrappa .loada");
+
+        var loadstart = function() {
+          // Hide the content container and display the loader
+          playa.style.visibility = "hidden";
+          loada.style.visibility = "visible";
+        }
+
+        var loadstop = function() {
+          // Hide the loader and show the actual content
+          loada.style.visibility = "hidden";
+          playa.style.visibility = "visible";
+
+          // Disable interaction with embedded DOM elements
+          playa.insertCSS("body {-webkit-user-select: none;} img {-webkit-user-drag: none;}");
+        }
+
+        playa.addEventListener("did-start-loading", loadstart);
+        playa.addEventListener("did-stop-loading", loadstop);
+
+        playa.src = "http://www.shomi.com";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="navigata"></div>
+    <div id="wrappa">
+      <div class="loada" style="visiblity: hidden;"></div>
+      <webview
+        id="playa"
+        autosize="on"
+        style="visibility: hidden;"
+        useragent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36"
+        plugins></webview>
+    </div>
+  </body>
+</html>

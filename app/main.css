@@ -1,0 +1,54 @@
+html, body {
+  background: #000;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #eee;
+  -webkit-user-select: none;
+}
+
+a, button {
+}
+
+#navigata {
+  position: absolute;
+  background: red;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  -webkit-app-region: drag;
+}
+
+#wrappa {
+  background: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+#wrappa webview#playa {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#wrappa .loada {
+  background: white;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}

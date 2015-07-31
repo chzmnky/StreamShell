@@ -1,0 +1,38 @@
+{
+  "name": "streamshell",
+  "version": "0.0.1",
+  "description": "A desktop wrapper for NetFlix, Shomi, CraveTV, etc.",
+  "main": "app/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinbolton/StreamShell.git"
+  },
+  "keywords": [
+    "netflix",
+    "shomi",
+    "crave"
+  ],
+  "author": "Robin Bolton <robin@robinbolton.com> (http://robinbolton.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robinbolton/StreamShell/issues"
+  },
+  "homepage": "https://github.com/robinbolton/StreamShell#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^0.30.2",
+    "gulp": "^3.9.0"
+  },
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "react": "npm:react@^0.14.0-beta1"
+    },
+    "devDependencies": {
+      "traceur": "github:jmcriffey/bower-traceur@0.0.88",
+      "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88"
+    }
+  }
+}
